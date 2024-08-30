@@ -6,6 +6,8 @@ import { GridGlobe } from "./GridGlobe";
 import Lottie from "react-lottie";
 import { useState } from "react";
 import animationData from "@/data/confetti.json";
+import MagicButton from "./Button";
+import { Copy } from "lucide-react";
 
 export const BentoGrid = ({
   className,
@@ -50,6 +52,11 @@ export const BentoGridItem = ({
   spareImg?: string;
 }) => {
   const [copied, setCopied] = useState(false);
+  // Copy to clipboard
+  const handleCopy = () => {
+    navigator.clipboard.writeText("alpranjal28@gmail.com");
+    setCopied(true);
+  };
 
   return (
     <div
@@ -62,7 +69,7 @@ export const BentoGridItem = ({
         backgroundColor: `linear-gradient(90deg, rgba(16,14,40,1) 0%, rgba(6,6,142,1) 100%)`,
       }}
     >
-      <div className={`${id === 6 && `flex justify-center h-full`}`}>
+      <div className={`${id === 6 && `flex justify-center`} h-full`}>
         <div className="w-full h-full absolute">
           {img && (
             <img
@@ -89,7 +96,7 @@ export const BentoGridItem = ({
 
         {id === 6 && (
           <BackgroundGradientAnimation>
-            <div className="absolute z-50 flex items-center justify-center text-white font-bold " />
+            {/* <div className="absolute z-50 flex items-center justify-center text-white font-bold " /> */}
           </BackgroundGradientAnimation>
         )}
 
@@ -150,6 +157,13 @@ export const BentoGridItem = ({
                   }}
                 />
               </div>
+              <MagicButton
+                title={copied ? "Email copied" : "Copy email"}
+                icon={<Copy />}
+                position="left"
+                otherClasses="!bg-[#161131]"
+                handleClick={handleCopy}
+              />
             </div>
           )}
         </div>
