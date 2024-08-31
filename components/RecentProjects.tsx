@@ -10,6 +10,7 @@ const RecentProjects = () => {
         A small selection of{" "}
         <span className="text-purple">recent projects</span>
       </h1>
+      {/* Projects Container */}
       <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-10">
         {projects.map(({ id, title, des, img, iconLists, link }, index) => (
           <div
@@ -23,12 +24,15 @@ const RecentProjects = () => {
                 </div>
                 <img src={img} alt={title} className="z-10 absolute bottom-0" />
               </div>
+
               <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
                 {title}
               </h1>
+              
               <p className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2">
                 {des}
               </p>
+              
               <div className="flex items-center justify-between mt-7 mb-3">
                 <div className="flex items-center">
                   {iconLists.map((icon, index) => (
