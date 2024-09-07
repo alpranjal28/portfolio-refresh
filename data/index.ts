@@ -5,13 +5,120 @@ export const navItems = [
   { name: "Contact", link: "#contact" },
 ];
 
+export const skills = [
+  {
+    title: "TypeScript",
+    type: "language",
+  },
+  {
+    title: "JavaScript",
+    type: "language",
+  },
+  {
+    title: "HTML",
+    type: "language",
+  },
+  {
+    title: "CSS",
+    type: "language",
+  },
+  {
+    title: "React",
+    type: "framework",
+  },
+  {
+    title: "Shadcn",
+    type: "framework",
+  },
+  {
+    title: "NextJS",
+    type: "framework",
+  },
+  {
+    title: "Express",
+    type: "framework",
+  },
+  {
+    title: "Node.js",
+    type: "framework",
+  },
+  {
+    title: "Tailwind",
+    type: "framework",
+  },
+  {
+    title: "AWS S3",
+    type: "tools",
+  },
+  {
+    title: "AWS EC2",
+    type: "tools",
+  },
+  {
+    title: "AWS RDS",
+    type: "tools",
+  },
+  {
+    title: "Appwrite",
+    type: "tools",
+  },
+  {
+    title: "Cloudinary",
+    type: "tools",
+  },
+  {
+    title: "MongoDB",
+    type: "database",
+  },
+  {
+    title: "MySQL",
+    type: "database",
+  },
+  {
+    title: "Prisma",
+    type: "database",
+  },
+  {
+    title: "BootStrap",
+    type: "library",
+  },
+  {
+    title: "Framer-Motion",
+    type: "library",
+  },
+  {
+    title: "Material-UI",
+    type: "library",
+  },
+  {
+    title: "Radix-UI",
+    type: "library",
+  },
+  {
+    title: "Git",
+    type: "other",
+  },
+  {
+    title: "GitHub",
+    type: "other",
+  },
+  {
+    title: "twilio",
+    type: "other",
+  },
+  {
+    title: "Linux",
+    type: "other",
+  },
+];
+
 export const gridItems = [
   {
     id: 1,
     title: "I prioritize client collaboration, fostering open communication ",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
-    imgClassName: "w-full h-full",
+    imgClassName: "w-full top-0",
     titleClassName: "justify-end",
     img: "/b1.svg",
     spareImg: "",
@@ -28,12 +135,12 @@ export const gridItems = [
   },
   {
     id: 3,
-    title: "My tech stack",
-    description: "I constantly try to improve",
+    title: "Currently building a JS Animation library",
+    description: "The Inside Scoop",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-center",
-    img: "",
+    img: "/b5.svg",
     spareImg: "",
   },
   {
@@ -49,12 +156,12 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building a JS Animation library",
-    description: "The Inside Scoop",
+    title: "My tech stack",
+    description: "I constantly try to improve",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
-    img: "/b5.svg",
+    img: "",
     spareImg: "/grid.svg",
   },
   {

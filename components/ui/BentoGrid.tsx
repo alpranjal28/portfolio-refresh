@@ -7,6 +7,8 @@ import { useState } from "react";
 import animationData from "@/data/confetti.json";
 import MagicButton from "./Button";
 import { Copy } from "lucide-react";
+import { ParallaxScroll } from "./ParallaxScroll";
+import { skills } from "@/data";
 
 export const BentoGrid = ({
   className,
@@ -93,6 +95,20 @@ export const BentoGridItem = ({
           )}
         </div>
 
+        <div
+          className={`absolute right-0 -bottom-5 ${
+            id === 5 && `w-full opacity-80`
+          }`}
+        >
+          {spareImg && (
+            <img
+              src={spareImg}
+              alt={spareImg}
+              className={`object-cover object-center w-full h-full`}
+            />
+          )}
+        </div>
+
         {id === 6 && (
           <BackgroundGradientAnimation>
             {/* <div className="absolute z-50 flex items-center justify-center text-white font-bold " /> */}
@@ -114,31 +130,9 @@ export const BentoGridItem = ({
 
           {id === 2 && <GridGlobe />}
 
-          {id === 3 && (
+          {id === 5 && (
             <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
-              <div className="flex flex-col gap-3 lg:gap-8">
-                {["MongoDb", "Express", "React.js"].map((item, index) => (
-                  <span
-                    className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132e]"
-                    key={index}
-                  >
-                    {item}
-                  </span>
-                ))}
-                <span className="py-4 px-3 rounded-lg text-center bg-[#10132e]" />
-              </div>
-
-              <div className="flex flex-col gap-3 lg:gap-8">
-                <span className="py-4 px-3 rounded-lg text-center bg-[#10132e]" />
-                {["Next.js", "Tailwind", "Appwrite"].map((item, index) => (
-                  <span
-                    className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132e]"
-                    key={index}
-                  >
-                    {item}
-                  </span>
-                ))}
-              </div>
+              <ParallaxScroll skills={skills} />
             </div>
           )}
 
