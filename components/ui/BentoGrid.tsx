@@ -60,6 +60,7 @@ export const BentoGridItem = ({
   };
 
   return (
+    // This is one card that is changing for different items
     <div
       className={cn(
         "row-span-1 relative overflow-hidden rounded-3xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4 border  border-white/[0.1]",
@@ -71,6 +72,7 @@ export const BentoGridItem = ({
       }}
     >
       <div className={`${id === 6 && `flex justify-center`} h-full`}>
+        {/* Image container */}
         <div className="w-full h-full absolute">
           {img && (
             <img
@@ -81,6 +83,7 @@ export const BentoGridItem = ({
           )}
         </div>
 
+        {/* id = 5 */}
         <div
           className={`absolute right-0 -bottom-5 ${
             id === 5 && `w-full opacity-80`
@@ -95,20 +98,7 @@ export const BentoGridItem = ({
           )}
         </div>
 
-        <div
-          className={`absolute right-0 -bottom-5 ${
-            id === 5 && `w-full opacity-80`
-          }`}
-        >
-          {spareImg && (
-            <img
-              src={spareImg}
-              alt={spareImg}
-              className={`object-cover object-center w-full h-full`}
-            />
-          )}
-        </div>
-
+        {/* id = 6 */}
         {id === 6 && (
           <BackgroundGradientAnimation>
             {/* <div className="absolute z-50 flex items-center justify-center text-white font-bold " /> */}
