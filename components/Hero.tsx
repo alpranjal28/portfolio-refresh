@@ -6,7 +6,7 @@ import { Navigation } from "lucide-react";
 
 const Hero = () => {
   return (
-    <div className="pb-20 pt-36">
+    <div className="pb-10 pt-16 md:pb-20 md:pt-36">
       <div className="">
         <Spotlight
           className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
