@@ -59,7 +59,11 @@ export const BentoGridItem = ({
     >
       {/* Optional gradient overlay for the container */}
       {id === 1 && (
-        <img src="b4.svg" alt="" className="absolute right-0 bottom-0" />
+        <img
+          src="bgcode.png"
+          alt=""
+          className="absolute md:w-full md:h-full left-0 opacity-50"
+        />
       )}
       {id === 2 && <GridGlobe />}
       {id === 3 && (
@@ -68,9 +72,7 @@ export const BentoGridItem = ({
           className="absolute -bottom-52 -right-24 opacity-80"
         />
       )}
-      {id === 4 && (
-        <img src="b4.svg" alt="" className="absolute right-0" />
-      )}
+      {id === 4 && <img src="b4.svg" alt="" className="absolute right-0" />}
 
       {id === 5 && (
         <div className="h-screen w-full dark:bg-black-100 bg-white  dark:bg-grid-white/[0.06] bg-grid-black/[0.2] flex items-center justify-center absolute top-0 left-0">
@@ -96,12 +98,7 @@ export const BentoGridItem = ({
         </>
       )}
 
-      <div
-        className="
-      relative group-hover/bento:translate-x-2 transition duration-200 flex h-full w-full z-10
-      
-      "
-      >
+      <div className="relative group-hover/bento:translate-x-2 transition duration-200 flex h-full w-full z-10">
         <div className="flex flex-col items-start justify-center p-5 md:p-10  gap-2">
           {/* Text content section */}
           <div className="relative">

@@ -29,7 +29,7 @@ const RecentProjects = () => {
                 {title}
               </h1>
               
-              <p className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2">
+              <p className="lg:text-xl lg:font-normal font-light text-sm line-clamp-4">
                 {des}
               </p>
               
