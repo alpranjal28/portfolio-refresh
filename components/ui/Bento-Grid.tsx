@@ -9,6 +9,7 @@ import MagicButton from "./Button";
 import Lottie from "react-lottie";
 import animationData from "@/data/confetti.json";
 import { useState } from "react";
+import Image from "next/image";
 
 export const BentoGrid = ({
   className,
@@ -59,20 +60,34 @@ export const BentoGridItem = ({
     >
       {/* Optional gradient overlay for the container */}
       {id === 1 && (
-        <img
-          src="bgcode.png"
-          alt=""
+        <Image
+          src="/bgcode.png"
+          alt="coffee&code"
           className="absolute md:w-full md:h-full left-0 opacity-50"
+          width={1000}
+          height={1000}
         />
       )}
       {id === 2 && <GridGlobe />}
       {id === 3 && (
-        <img
-          src="b5.svg"
-          className="absolute -bottom-52 -right-24 opacity-80"
+        <Image
+          src="/b5.svg"
+          alt="coffee&code"
+          className="absolute bottom-0 right-0 opacity-80"
+          width={300}
+          height={350}
         />
       )}
-      {id === 4 && <img src="b4.svg" alt="" className="absolute right-0" />}
+      {id === 4 && (
+        // <img src="b4.svg" alt="" className="absolute right-0" />
+        <Image
+          src="/b4.svg"
+          alt="windowImg"
+          className="absolute right-0 opacity-80"
+          width={250}
+          height={250}
+        />
+      )}
 
       {id === 5 && (
         <div className="h-screen w-full dark:bg-black-100 bg-white  dark:bg-grid-white/[0.06] bg-grid-black/[0.2] flex items-center justify-center absolute top-0 left-0">

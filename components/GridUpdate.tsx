@@ -1,4 +1,3 @@
-import { cn } from "@/utils/cn";
 import React from "react";
 import { BentoGrid, BentoGridItem } from "@/components/ui/Bento-Grid";
 
@@ -36,7 +35,7 @@ const items = [
   },
   {
     id: 3,
-    title: "Currently building a TS Portfolio",
+    title: "Currently learning Data Structures and Algorithms",
     description: "The Inside Scoop",
     gridClassName: "md:col-span-2 md:row-span-2",
   },
